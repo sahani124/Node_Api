@@ -1,1 +1,9 @@
 npm install express mssql dotenv
+
+curl --location 'http://localhost:3000/api/codetype' \
+--header 'Content-Type: application/json' \
+--data '{
+  "CodeType": "HABRANCHLIST",
+  "Description": "Inventory Code",
+  "IsActive": true
+}'
